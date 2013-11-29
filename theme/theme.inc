@@ -39,7 +39,7 @@ function islandora_critical_edition_preprocess_islandora_critical_media_object(a
 
   $critical_edition_module_path = drupal_get_path('module', 'islandora_critical_edition');
   $validate_path = variable_get('islandora_critical_edition_validate_url', '/validator/validate.html');
-  islandora_critical_edition_add_js();
+  //islandora_critical_edition_add_js();
   $islandora_object = $variables['islandora_object'];
   $pages = islandora_paged_content_get_pages($islandora_object);
   $pids = array_keys($pages);
